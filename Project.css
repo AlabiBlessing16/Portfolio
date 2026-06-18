@@ -78,7 +78,7 @@ margin-top:10px;
 }
 
 .project-container{
-grid-template-columns:1fr;
+grid-template-columns:2fr;
 }
 
 }

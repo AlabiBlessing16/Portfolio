@@ -36,16 +36,18 @@ margin-top: 80px;
 }
 
 .project-container{
-display:flex;
-justify-content:center;
-flex-wrap:wrap;
+display:grid;
+grid-template-columns: repeat(3, 1fr);
 gap:20px;
+justify-items:center;
+align-items:start;
 }
 
 .card{
 background:pink;
 padding:20px;
-width:250px;
+width:100%;
+max-width:350px;
 border-radius:8px;
 box-shadow:0 4px 10px rgba(0, 0, 0, 0.5);
 }
@@ -63,11 +65,17 @@ border-radius:5px;
 .card:hover{
 background: plum;
 color: white;
-padding: 10px;
+padding: 40px;
 }
 
 /* Responsive Design */
-@media(max-width:768px){
+@media (max-width:1024px) {
+	.project-container{
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+@media (max-width:768px){
 
 header{
 flex-direction:column;
@@ -78,8 +86,7 @@ margin-top:10px;
 }
 
 .project-container{
-grid-template-columns:2fr;
-grid-template-rows:1fr;
+grid-template-columns:1fr;
 }
 
 }

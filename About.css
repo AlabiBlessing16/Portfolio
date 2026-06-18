@@ -1,0 +1,106 @@
+body{
+margin:0;
+font-family:Arial;
+background:#f4f4f4;
+}
+
+nav{
+display:flex;
+justify-content:space-between;
+background:#111;
+padding:15px 50px;
+}
+
+.logo{
+color:white;
+}
+
+nav ul{
+display:flex;
+list-style:none;
+}
+
+nav ul li{
+margin-left:20px;
+}
+
+nav ul li a{
+color:white;
+text-decoration:none;
+}
+
+.about{
+display:flex;
+justify-content:center;
+align-items:center;
+min-height:80vh;
+}
+
+.about-container{
+display:flex;
+align-items:center;
+justify-content:center;
+gap:60px;
+max-width:1000px;
+}
+
+.about-image{
+width:400px;
+height:400px;
+object-fit:cover;
+border-radius:10px;
+box-shadow:0 8px 25px rgba(0,0,0,0.3);
+}
+
+.about-text{
+max-width:500px;
+}
+
+.about-text h1{
+margin-bottom:10px;
+}
+
+/* Skills styled like buttons */
+
+.skills{
+margin-top:15px;
+padding:0;
+}
+
+.skills li{
+list-style:none;
+display:inline-block;
+margin:8px;
+padding:10px 20px;
+background:#003366;
+color:white;
+border-radius:6px;
+cursor:pointer;
+transition:0.3s;
+}
+
+/* Hover effect */
+
+.skills li:hover{
+background: plum;
+color:black;
+transform:scale(1.05);
+}
+
+
+/* Responsive Design */
+@media(max-width:768px){
+
+header{
+flex-direction:column;
+}
+
+header ul{
+margin-top:10px;
+}
+
+.project-container{
+grid-template-columns:1fr;
+}
+
+}

@@ -1,0 +1,83 @@
+body{
+margin:0;
+font-family:Arial;
+background:#f4f4f4;
+}
+
+nav{
+display:flex;
+justify-content:space-between;
+background:#222;
+padding:15px 50px;
+}
+
+.logo{
+color:white;
+}
+
+nav ul{
+display:flex;
+list-style:none;
+}
+
+nav ul li{
+margin-left:20px;
+}
+
+nav ul li a{
+color:white;
+text-decoration:none;
+}
+
+.contact{
+text-align:center;
+padding:60px 20px;
+}
+
+form{
+max-width:400px;
+margin:auto;
+display:flex;
+flex-direction:column;
+}
+
+input, textarea{
+margin:10px 0;
+padding:12px;
+border:1px solid #ccc;
+border-radius:5px;
+}
+
+textarea{
+height:120px;
+}
+
+button{
+padding:12px;
+border:none;
+background:#333;
+color:white;
+cursor:pointer;
+border-radius:5px;
+}
+
+button:hover{
+background:#555;
+}
+
+/* Responsive Design */
+@media(max-width:768px){
+
+header{
+flex-direction:column;
+}
+
+header ul{
+margin-top:10px;
+}
+
+.project-container{
+grid-template-columns:1fr;
+}
+
+}

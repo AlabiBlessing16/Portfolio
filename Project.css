@@ -63,7 +63,7 @@ border-radius:5px;
 .card:hover{
 background: plum;
 color: white;
-padding: 40px;
+padding: 10px;
 }
 
 /* Responsive Design */

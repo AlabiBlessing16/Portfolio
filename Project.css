@@ -79,7 +79,6 @@ margin-top:10px;
 
 .project-container{
 grid-template-columns:2fr;
-grid-template-rows:1fr;
 }
 
 }
